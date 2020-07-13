@@ -1,0 +1,50 @@
+
+<view class="tab-box">
+    <view bindtap='changTab' class="{{currentTab==0 ? 'active' : ''}}" data-current='0'>服饰</view>
+    <view bindtap='changTab' class="{{currentTab==1 ? 'active' : ''}}" data-current='1'>鞋</view>
+    <view bindtap='changTab' class="{{currentTab==2 ? 'active' : ''}}" data-current='2'>箱包</view>
+</view>
+<view class="menu_bar">
+ <view class="nav_box">
+  <view class="nav" wx:if="{{currentTab==0}}">
+     <view class="{{indexTab==0?'red':'default'}}" bindtap="selected" data-index="0">衬衫</view>
+     <view class="{{indexTab==1?'red':'default'}}" bindtap="selected1" data-index="1">卫衣</view>
+     <view class="{{indexTab==2?'red':'default'}}" bindtap="selected2" data-index="2">T恤</view>
+  </view>
+  <view class="nav" wx:if="{{currentTab==1}}">
+     <view class="{{indexTab==3?'red':'default'}}" bindtap="selected3" data-index="3">帆布鞋</view>
+  </view>
+  <view class="nav" wx:if="{{currentTab==2}}">
+     <view class="{{indexTab==4?'red':'default'}}" bindtap="selected4" data-index="4">拉杆箱</view>
+     <view class="{{indexTab==5?'red':'default'}}" bindtap="selected5" data-index="5">包</view>
+  </view>
+</view>
+</view>
+<view class="connent">
+   <view wx:if="{{currentTab==0}}">
+     <view wx:if="{{indexTab==0}}" >
+        <view class="box">
+            <view class="name">落栗 衬衫 牛津纺<text style="color:red;margin-left:15rpx;font-weight:bold;">￥149</text></view>
+            <view class="con">
+               <image src="{{src}}"></image>
+               <view>{{name}}</view>
+            </view>
+            <view class="yuandian">
+               <view class="a" hover-class="style" bindtap="select" data-index="0"></view>
+               <view class="b" hover-class="style" bindtap="select" data-index="1"></view>
+               <view class="c" hover-class="style" bindtap="select" data-index="2"></view>
+               <view class="d" hover-class="style" bindtap="select" data-index="3"></view>
+               <view class="e" hover-class="style" bindtap="select" data-index="4"></view>
+            </view>
+        </view>
+     </view>
+  </view>
+</view>
+
+
+
+
+
+
+<loading hidden="{{hidden}}">玩命加载中…</loading>
+

@@ -1,0 +1,65 @@
+<view class="content">
+  <view class="bg">
+    <view class="head">
+      <view class="headIcon" bindtap="">
+        <image src="/image/icon/head.jpg"></image>
+      </view>
+      <view class="login">
+        <view class="account">账号：66666666</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="hr"></view>
+
+  <view class="item">
+    <view class="img">
+      <image src="/image/icon/qbdd.jpg" style="width:40rpx;height:48rpx;"></image>
+    </view>
+    <view class="name">全部订单</view>
+    <view class="detail">
+      <text>></text>
+    </view>
+  </view>
+
+  <view class="line" ></view>
+
+  <view class="item" bindtap="gotoshopping">
+    <view class="img">
+      <image src="/image/icon/dfk.jpg" style="width:40rpx;height:48rpx;"></image>
+    </view>
+    <view class="name">待付款</view>
+    <view class="detail">
+      <text>></text>
+    </view>
+  </view>
+
+  <view class="line"></view>
+
+  <view class="item">
+    <view class="img">
+      <image src="/image/icon/dsh.jpg" style="width:46rpx;height:40rpx;"></image>
+    </view>
+    <view class="name">待收货</view>
+    <view class="detail">
+      <text class="count">2单</text>
+      <text> ></text>
+    </view>
+  </view>
+  
+
+  <view class="hr"></view>
+
+  <view class="item" bindtap="gotocoupon">
+    <view class="img">
+      <image src="/image/icon/yhq.jpg" style="width:50rpx;height:44rpx;"></image>
+    </view>
+    <view class="name" >优惠券</view>
+    <view class="detail">
+      <text class="count">4张</text>
+      <text> ></text>
+    </view>
+  </view>
+  <view class="line"></view>
+</view>
+

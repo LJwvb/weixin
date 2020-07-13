@@ -1,0 +1,205 @@
+<view class="menu">
+  <view class="tab-box">
+    <text bindtap='changTab' class="{{currentTab==0 ? 'active' : ''}}" data-current='0'>耳机</text>
+    <text bindtap='changTab' class="{{currentTab==1 ? 'active' : ''}}" data-current='1'>充电配件</text>
+    <text bindtap='changTab' class="{{currentTab==2 ? 'active' : ''}}" data-current='2'>保护壳</text>
+    <text bindtap='changTab' class="{{currentTab==3 ? 'active' : ''}}" data-current='3'>更多</text>
+  </view>
+</view>
+<view class="nav_box">
+  <view class="nav" wx:if="{{currentTab==0}}">
+     <view class="{{indexTab==0?'red':'default'}}" bindtap="selected" data-index="0">蓝牙耳机</view>
+     <view class="{{indexTab==1?'red':'default'}}" bindtap="selected1" data-index="1">线控耳机</view>
+  </view>
+  <view class="nav" wx:if="{{currentTab==1}}">
+     <view class="{{indexTab==2?'red':'default'}}" bindtap="selected2" data-index="2">数据线</view>
+     <view class="{{indexTab==3?'red':'default'}}" bindtap="selected3" data-index="3">充电器</view>
+     <view class="{{indexTab==4?'red':'default'}}" bindtap="selected4" data-index="4">充电宝</view>
+  </view>
+  <view class="nav" wx:if="{{currentTab==2}}">
+     <view class="{{indexTab==5?'red':'default'}}" bindtap="selected5" data-index="5">手机壳</view>
+     <view class="{{indexTab==6?'red':'default'}}" bindtap="selected6" data-index="6">手机膜</view>
+  </view>
+  <view class="nav" wx:if="{{currentTab==3}}">
+     <view class="{{indexTab==7?'red':'default'}}" bindtap="selected7" data-index="7">自拍杆</view>
+     <view class="{{indexTab==8?'red':'default'}}" bindtap="selected8" data-index="8">音箱</view>
+     <view class="{{indexTab==9?'red':'default'}}" bindtap="selected9" data-index="9">车载充电</view>
+  </view>
+</view>
+
+<view class="connent">
+<!-- 耳机 -->
+   <view  class="connent_in" wx:if="{{currentTab==0}}">
+   <!-- 蓝牙耳机 -->
+     <view wx:if="{{indexTab==0}}" >
+       <image src="/image/parts/a1.png"></image>
+          <text style="margin-left:106rpx;">Smartisan 真无线蓝牙耳机</text>
+          <view style="color:red;margin-left:214rpx;font-weight:bold;">￥249.00</view>
+          <view class="intocart" bindtap="addGood" data-id="14">加入购物车</view>
+       <image src="/image/parts/a2.png"></image>
+          <text style="margin-left:106rpx;">smartisan 颈挂蓝牙耳机(黑色)</text>
+          <view style="color:red;margin-left:214rpx;font-weight:bold;">￥189.00</view>
+          <view class="intocart" bindtap="addGood" data-id="15">加入购物车</view>
+       <image src="/image/parts/a3.png"></image>
+          <text style="margin-left:106rpx;">smartisan 颈挂蓝牙耳机(薄荷绿)</text>
+          <view style="color:red;margin-left:214rpx;font-weight:bold;">￥189.00</view>
+          <view class="intocart" bindtap="addGood" data-id="16">加入购物车</view>
+          <view style="height:100rpx;"></view>
+     </view>
+     
+     <!-- 线控耳机 -->
+      <view wx:if="{{indexTab==1}}" >
+       <image src="/image/parts/a4.png"></image>
+          <text style="margin-left:106rpx;">Smartisan 半入耳式耳机(红色)</text>
+          <view style="color:red;margin-left:214rpx;font-weight:bold;">￥39.00</view>
+          <view class="intocart" bindtap="addGood" data-id="17">加入购物车</view>
+       <image src="/image/parts/a5.png"></image>
+          <text style="margin-left:106rpx;">Smartisan 半入耳式耳机(黑色)</text>
+          <view style="color:red;margin-left:214rpx;font-weight:bold;">￥39.00</view>
+          <view class="intocart" bindtap="addGood" data-id="18">加入购物车</view>
+       <image src="/image/parts/a6.png"></image>
+          <text style="margin-left:106rpx;">Smartisan 半入耳式耳机(白色)</text>
+          <view style="color:red;margin-left:214rpx;font-weight:bold;">￥59.00</view>
+          <view class="intocart" bindtap="addGood" data-id="19">加入购物车</view>
+          <view style="height:100rpx;"></view>
+     </view>
+   </view>
+<!-- 充电配件 -->
+   <view  class="connent_in" wx:if="{{currentTab==1}}">
+   <!-- 数据线 -->
+     <view wx:if="{{indexTab==2}}" >
+       <image src="/image/parts/b1.png"></image>
+          <text style="margin-left:106rpx;">坚果 弯头数据线（Type-C）</text>
+          <view style="color:red;margin-left:214rpx;font-weight:bold;">￥24.90</view>
+          <view class="intocart" bindtap="addGood" data-id="20">加入购物车</view>
+       <image src="/image/parts/b2.png"></image>
+          <text style="margin-left:106rpx;">C-force USB-C多功能转接器</text>
+          <view style="color:red;margin-left:214rpx;font-weight:bold;">￥148.00</view>
+          <view class="intocart" bindtap="addGood" data-id="21">加入购物车</view>
+       <image src="/image/parts/b3.png"></image>
+          <text style="margin-left:160rpx;">坚果彩虹数据线</text>
+          <view style="color:red;margin-left:214rpx;font-weight:bold;">￥16.00</view>
+          <view class="intocart" bindtap="addGood" data-id="22">加入购物车</view>
+       <image src="/image/parts/b4.png"></image>
+          <text style="margin-left:106rpx;">坚果 Type-C To Type-C 数据线</text>
+          <view style="color:red;margin-left:214rpx;font-weight:bold;">￥36.00</view>
+          <view class="intocart" bindtap="addGood" data-id="23">加入购物车</view>
+       <image src="/image/parts/b5.png"></image>
+          <text style="margin-left:106rpx;">Smartisan 耳机转接头</text>  
+          <view style="color:red;margin-left:214rpx;font-weight:bold;">￥16.00</view>
+          <view class="intocart" bindtap="addGood" data-id="24">加入购物车</view>
+           <view style="height:100rpx;"></view>
+     </view>
+     <!-- 充电器 -->
+      <view wx:if="{{indexTab==3}}" >
+       <image src="/image/parts/b6.png"></image>
+          <text style="margin-left:106rpx;">坚果 QuickCharge 4+ 快速充电器</text>
+          <view style="color:red;margin-left:264rpx;font-weight:bold;">￥58.00</view>
+          <view class="intocart" bindtap="addGood" data-id="25">加入购物车</view>
+       <image src="/image/parts/b7.png"></image>
+          <text style="margin-left:106rpx;">Smartisan 原装快充充电器 18W</text>
+          <view style="color:red;margin-left:264rpx;font-weight:bold;">￥39.00</view>
+          <view class="intocart" bindtap="addGood" data-id="26">加入购物车</view>
+           <view style="height:100rpx;"></view>
+     </view>
+     <!-- 充电宝 -->
+      <view wx:if="{{indexTab==4}}" >
+        <image src="/image/parts/b8.png"></image>
+          <text >坚果快充移动电源 20000mAh(45Wmax)</text>
+          <view style="color:red;margin-left:214rpx;font-weight:bold;">￥249.00</view>
+        <image src="/image/parts/b9.png"></image>
+          <text style="margin-left:106rpx;">坚果快充移动电源 10000mAh </text>
+          <text style="margin-left:146rpx;">(18Wmax)(灰色)</text>
+          <view style="color:red;margin-left:214rpx;font-weight:bold;">￥99.00</view>
+        <image src="/image/parts/b10.png"></image>
+          <text style="margin-left:106rpx;">坚果快充移动电源 10000mAh </text>
+          <text style="margin-left:146rpx;">(18Wmax)(蓝色)</text>
+          <view style="color:red;margin-left:214rpx;font-weight:bold;">￥99.00</view>
+      </view>
+   </view>
+<!-- 保护壳 -->
+  <view  class="connent_in " wx:if="{{currentTab==2}}">
+  <!-- 手机壳 -->
+      <view wx:if="{{indexTab==5}}" >
+        <image src="/image/parts/f1.png"></image>
+          <text style="margin-left:232rpx;">坚果 Pro 3</text>
+          <view style="margin-left:122rpx;font-weight:bold"> smartisan 复古相机保护套</view>
+          <view style="color:red;margin-left:234rpx;font-weight:bold;">￥49.00</view>
+        <image src="/image/parts/f2.png"></image>
+          <text style="margin-left:148rpx;">iPhone 11 足迹保护套 </text>
+          <view style="margin-left:64rpx;font-weight:bold;">莱卡成为第一只进入地球轨道的动物</view>
+          <view style="color:red;margin-left:236rpx;font-weight:bold;">￥69.00</view>
+        <image src="/image/parts/f3.png"></image>
+          <text style="margin-left:148rpx;">iPhone 11 足迹保护套 </text>
+          <view style="margin-left:144rpx;font-weight:bold;">克里斯蒂安·多普勒出生</view>
+          <view style="color:red;margin-left:236rpx;font-weight:bold;">￥69.00</view>
+        <image src="/image/parts/f4.png"></image>
+          <text style="margin-left:148rpx;">iPhone 11 足迹保护套 </text>
+          <view style="margin-left:116rpx;font-weight:bold;">英国科学杂志《自然》出版 </view>
+          <view style="color:red;margin-left:236rpx;font-weight:bold;">￥69.00</view>
+        <image src="/image/parts/f5.png"></image>
+          <text style="margin-left:148rpx;">iPhone 11 足迹保护套 </text>
+          <view style="margin-left:140rpx;font-weight:bold;">人类首次公开使用乙醚 </view>
+          <view style="color:red;margin-left:236rpx;font-weight:bold;">￥69.00</view>
+        <image src="/image/parts/f6.png"></image>
+          <text style="margin-left:148rpx;">坚果 Pro 3 足迹保护套 </text>
+          <view style="margin-left:140rpx;font-weight:bold;"> 克里斯蒂安·多普勒出生</view>
+          <view style="color:red;margin-left:236rpx;font-weight:bold;">￥49.00</view>
+        <image src="/image/parts/f7.png"></image>
+          <text style="margin-left:148rpx;">坚果 Pro 3 足迹保护套 </text>
+          <view style="margin-left:96rpx;font-weight:bold;"> 数学家哈密顿首次发现四元数</view>
+          <view style="color:red;margin-left:236rpx;font-weight:bold;">￥49.00</view>
+        <image src="/image/parts/f8.png"></image>
+          <text style="margin-left:148rpx;">坚果 Pro 3 足迹保护套 </text>
+          <view style="margin-left:122rpx;font-weight:bold;"> 德国天文学家开普勒出生</view>
+          <view style="color:red;margin-left:236rpx;font-weight:bold;">￥49.00</view>
+        <image src="/image/parts/f9.png"></image>
+          <text style="margin-left:148rpx;">坚果 Pro 3 足迹保护套</text>
+          <view style="margin-left:142rpx;font-weight:bold;">人类首次公开使用乙醚</view>
+          <view style="color:red;margin-left:236rpx;font-weight:bold;">￥49.00</view>
+    </view>
+  
+      <!-- 手机膜 -->
+     <view wx:if="{{indexTab==6}}" >
+          <text style="margin-left:144rpx;">对不起，暂时没有货</text>
+     </view>
+
+  </view>
+<!-- 更多 -->
+  <view  class="connent_in " wx:if="{{currentTab==3}}">
+  <!-- 自拍杆 -->
+      <view wx:if="{{indexTab==7}}" >
+          <image src="/image/parts/c1.png"></image>
+          <text style="margin-left:174rpx;">坚果三脚架自拍杆</text>
+          <view style="color:red;margin-left:236rpx;font-weight:bold;">￥89.00</view>
+      </view>
+   <!-- 音箱 -->
+      <view wx:if="{{indexTab==8}}" >
+          <image src="/image/parts/d1.png"></image>
+          <text style="margin-left:130rpx;">坚果砖式蓝牙小音箱(灰色)</text>
+          <view style="color:red;margin-left:236rpx;font-weight:bold;">￥99.00</view>
+          <image src="/image/parts/d2.png"></image>
+          <text style="margin-left:130rpx;">坚果砖式蓝牙小音箱(青色)</text>
+          <view style="color:red;margin-left:236rpx;font-weight:bold;">￥99.00</view>
+       </view>
+    <!-- 车载充电 -->
+      <view wx:if="{{indexTab==9}}" >
+          <image src="/image/parts/e1.png"></image>
+          <text style="margin-left:78rpx;">Smartisan 双口 & 快充车载充电器</text>
+          <view style="color:red;margin-left:236rpx;font-weight:bold;">￥59.00</view>
+       </view>
+ </view>
+</view>
+
+<view style="height:100rpx;"></view>
+ <view class="buyBtns">
+    <view class="shoppingcart">
+      <view class="num">{{quantity}}</view>
+      <image src="/image/bar/icon_shopping-1.png" style="width:45px;height:39px;"></image>
+    </view>
+   
+    <view class="buy" bindtap="buy">去购物车查看</view>
+  </view>
+
+
+<loading hidden="{{hidden}}">玩命加载中…</loading>

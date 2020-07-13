@@ -1,0 +1,96 @@
+
+
+<view >
+<view class="content" >
+  <view class="bg">
+    <view class="logo">
+      <view class="first">
+        <image src="/image/icon/logo.png" style="width:50rpx;height:50rpx;"></image>
+        Smartisan
+      </view>
+      <view class="second">理    解   万    岁</view>
+    </view>
+    <view class="search" bindtap="search">
+      <view>
+        <image src="/image/icon/search.png" style="width:50rpx;height:54rpx;float:left;margin-left:10rpx;"></image>
+        坚果Pro 3
+      </view>
+    </view>
+  </view>
+</view>
+<view class="hr"></view>
+<view class="lunbo">
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}" wx:key="imgUrls">
+      <swiper-item>
+        <image src="{{item}}" class="silde-image" style="width:100%;height:372rpx;"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<view class="hr"></view>
+<view class="nav">
+  <block wx:for="{{navs}}" wx:key="navs">
+    <view class="item" bindtap="navBtn" id="{{index}}" hover-class="style">
+      <view>
+        <image src="{{item.img}}" style="width:50rpx;height:50rpx;"></image>
+      </view>
+      <view>{{item.name}}</view>
+    </view>
+  </block>
+</view>
+<view class="hr"></view>
+<view class="menu">秒杀</view>
+<view class="seckill ">
+  <view class="stage {{TopIndex==0 ? 'active':''}}" bindtap="miaosha" data-index="0">
+    <view class="time">12:00</view>
+    <view style="color:#C81623">抢购中</view>
+  </view>
+  <view class="stage {{TopIndex==1 ? 'active':''}}" bindtap="miaosha" data-index="1">
+    <view class="timeDefult">14:00</view>
+    <view>即将开始</view>
+  </view>
+  <view class="stage {{TopIndex==2 ? 'active':''}}" bindtap="miaosha" data-index="2">
+    <view class="timeDefult">16:00</view>
+    <view>即将开始</view>
+  </view>
+  <view class="stage {{TopIndex==3 ? 'active':''}}" bindtap="miaosha" data-index="3">
+    <view class="timeDefult">18:00</view>
+    <view>即将开始</view>
+  </view>
+  <view class="stage">
+    <view class="timeDefult">20:00</view>
+    <view>即将开始</view>
+  </view>
+</view>
+<view class="hr"></view>
+<view wx:if="{{TopIndex==0}}">
+  <image src="/image/miaosha/a.jpg" class="image_i" bindtap="imgBtn_a"></image>
+  <image src="/image/miaosha/b.jpg" class="image_i" bindtap="imgBtn_b"></image>
+  <image src="/image/miaosha/c.jpg" class="image_i" bindtap="imgBtn_b"></image>
+  <image src="/image/miaosha/d.jpg" class="image_i" bindtap="imgBtn_d"></image>
+</view>
+<view wx:if="{{TopIndex==1}}">
+  <image src="/image/miaosha/a2.jpg" class="image_i" bindtap="imgBtn_d"></image>
+  <image src="/image/miaosha/b2.jpg" class="image_i" bindtap="imgBtn_c"></image>
+  <image src="/image/miaosha/c2.png" class="image_i" bindtap="imgBtn_c"></image>
+  <image src="/image/miaosha/d2.png" class="image_i" bindtap="imgBtn_e"></image>
+</view>
+<view wx:if="{{TopIndex==2}}">
+  <image src="/image/miaosha/a3.jpg" class="image_i" bindtap="imgBtn_d"></image>
+  <image src="/image/miaosha/b3.jpg" class="image_i" bindtap="imgBtn_b"></image>
+  <image src="/image/miaosha/c3.jpg" class="image_i" bindtap="imgBtn_b"></image>
+  <image src="/image/miaosha/d3.jpg" class="image_i" bindtap="imgBtn_b"></image>
+</view>
+<view wx:if="{{TopIndex==3}}">
+  <image src="/image/miaosha/a4.jpg" class="image_i" bindtap="imgBtn_b"></image>
+  <image src="/image/miaosha/b4.jpg" class="image_i" bindtap="imgBtn_d"></image>
+  <image src="/image/miaosha/c4.png" class="image_i" bindtap="imgBtn_f"></image>
+  <image src="/image/miaosha/d4.jpg" class="image_i" bindtap="imgBtn_c"></image>
+</view>
+<view class="hr"></view>
+<view class="text">
+  <text>400 - 603 - 5000 \r 
+周一到周日 9:00 - 18:00  (仅收市话费)</text>
+</view>
+</view>

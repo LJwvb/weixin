@@ -1,0 +1,61 @@
+ 
+<view class="items">
+    <checkbox-group bindchange="checkboxChange">
+     <block wx:for="{{orders}}" wx:key="orders">
+      <view class="item" >
+        <view class="icon">
+          <label for="{{item.id}}">
+            <checkbox id="{{item.id}}" value="{{item.id}}"  checked="{{item.selected}}" hidden/>
+              <icon type="{{item.selected==true?'success':'circle'}}" color="#E4393C" data-value="{{item.id}}" size="20"/>
+           </label>   
+            </view>
+            <view class="pic">
+              <image src="{{item.pic}}" style="width:80px;height:80px;"></image>
+            </view>
+            <view class="order">
+              <view class="title">{{item.name}}</view>
+              <view class="desc">
+                <view>数量：{{item.quantity}}</view>
+              </view>
+              <view class="priceInfo">
+                <view class="price">￥{{item.price}}</view>
+                <view class="minus" id="{{item.id}}" bindtap="minusOrders">-</view>
+                <view class="count">{{item.quantity}}</view>
+                <view class="add" id="{{item.id}}" bindtap="addOrders">+</view>
+              </view>
+            </view>
+           </view>
+       </block>
+     </checkbox-group>
+ <view class="line"></view>
+ 
+      <checkbox-group bindchange="checkAll">
+        <view class="totalInfo">
+          <view class="all">
+            <view>
+               <label for="boxAll">
+               <checkbox checked="{{selectedAll}}" id="boxAll" hidden/>
+               <icon type="{{selectedAll==true?'success':'circle'}}" color="#E4393C" data-value="{{item.id}}" size="20"/>
+               </label>
+            </view>
+            
+            <view>全选</view>
+             <view class="remove" bindtap="remove">清空</view>
+          </view>
+      
+          <view class="amount">
+            <view class="total">总计：￥{{totalPrice}}元</view>
+            <view>不含运费，已优惠￥0.00</view>
+          </view>
+          <view class="opr" bindtap="money">去结算</view>
+        </view>
+     </checkbox-group>
+ </view>
+
+
+
+
+ <view class="if">若加入购物车后没有显示，请下拉刷新</view>
+
+
+

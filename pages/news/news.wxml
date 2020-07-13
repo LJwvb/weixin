@@ -1,0 +1,21 @@
+<view class="box">
+    <view class="game">
+       <image src="{{computer}}" class="computer"></image>
+       <text class="result">{{result}}</text>
+       <image src="{{player}}" class="player"></image>
+    </view>
+    <view class="game_interface">
+    <view  class="circle" wx:for="{{circleList}}" style="top:{{item.topCircle}}rpx; left:{{item.leftCircle}}rpx; background-color: {{(index%2==0)?colorCircleFirst:colorCircleSecond}};" wx:key="circleList"></view>
+      <text class="text">战斗吧，少年！！</text>
+       <view class="choose" >
+            <block wx:for="{{srcs}}" wx:key="srcs">
+               <view class="choose_one" bindtap="choose_one" id="{{index}}">
+                   <image class="choose_i" src="{{item}}"></image>
+               </view>
+            </block>
+        </view>
+      <text class="winNum">你已经获胜了<text style="color:red; font-size:40rpx">{{winNum}}</text>次</text>
+      <button class="againBtn" bindtap="again">再来!</button> 
+    </view>
+</view>
+<loading hidden="{{hidden}}">玩命加载中…</loading>

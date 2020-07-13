@@ -1,0 +1,103 @@
+.tab-box view  {
+  display: inline-block;
+  width: 247rpx;
+  font-size: 30rpx;
+  height: 74rpx;
+  line-height: 72rpx;
+  text-align: center;
+}
+.active {
+  width: 200rpx;
+  background: gray;
+  border: 5rpx solid white;
+}
+
+.nav {
+  width: 113rpx;
+  height:100rpx;
+}
+
+.default {
+ text-align: center;
+ color: #000;
+ font-weight: bold;
+ line-height: 100rpx;
+ float: left;
+} 
+.red {
+  line-height:100rpx;
+  text-align: center;
+  color: #f63;
+  font-weight: bold;
+  float: left;
+}
+.box{
+  width:597rpx;
+  height: 700rpx;
+  border: 2rpx solid black;
+  position: relative;
+  left: 150rpx;
+  top: -103rpx;
+}
+
+.con image{
+  position: absolute;
+  width: 594rpx;
+  height: 500rpx;
+  left: 1rpx;
+  top: 45rpx;
+  border-bottom: 2rpx solid black;
+}
+.con view{
+  margin-top: 500rpx;
+  font-weight: bold;
+  margin-left: 252rpx;
+}
+.name{
+  margin-left: 158rpx;
+  font-weight: bold;
+  
+}
+.yuandian{
+  display: flex;
+}
+.yuandian view{
+  margin-left: 63rpx;
+  margin-top: 20rpx;
+}
+.a{
+  height: 40rpx;
+  width: 40rpx;
+  background: black;
+  border-radius: 50%;
+}
+.b{
+  height: 40rpx;
+  width: 40rpx;
+  background:whitesmoke;
+  border-radius: 50%;
+}
+.c{
+  height: 40rpx;
+  width: 40rpx;
+  background:#92929a;
+  border-radius: 50%;
+}
+.d{
+  height: 40rpx;
+  width: 40rpx;
+  background:#1d2432;
+  border-radius: 50%;
+}
+.e{
+  height: 40rpx;
+  width: 40rpx;
+  background:#97adcf;
+  border-radius: 50%;
+}
+
+
+
+.style{
+  border: 5rpx solid gray;
+}

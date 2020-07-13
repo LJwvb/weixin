@@ -1,0 +1,56 @@
+{
+  "pages": [
+    "pages/login/login",
+ 
+    "pages/index/index",
+    "pages/index/phone/phone",
+    "pages/index/search/search",
+    "pages/index/parts/parts",
+    "pages/index/bag/bag",
+    "pages/index/Printer/Printer",
+    "pages/index/Robot/Robot",
+    "pages/index/show/show",
+    "pages/index/service/service",
+    "pages/news/news",
+    "pages/shopping/shopping",
+    "pages/shopping/money/money",
+    "pages/me/me"
+  ],
+  "tabBar": {
+    "list": [
+      {
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "/image/bar/icon_tabbar-1.png",
+      "selectedIconPath": "/image/bar/icon_tabbar-selected.png"
+      },
+      {
+        "pagePath": "pages/news/news",
+        "text": "游戏",
+        "iconPath": "/image/bar/icon_analysis-1.png",
+        "selectedIconPath": "/image/bar/icon_analysis-selected.png"
+      },
+      {
+        "pagePath": "pages/shopping/shopping",
+        "text": "购物车",
+        "iconPath": "/image/bar/icon_shopping-1.png",
+        "selectedIconPath": "/image/bar/icon_shopping-selected.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "/image/bar/icon_me-1.png",
+        "selectedIconPath": "/image/bar/icon_me-selected.png"
+      }
+    ]},
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#2b3b49",
+    "navigationBarTitleText": "锤子手机",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true
+
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

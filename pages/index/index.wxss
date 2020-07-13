@@ -1,0 +1,110 @@
+
+
+
+
+
+.content{
+  font-family: "Microsoft YaHei";
+}
+.bg{
+  width: 100%;
+  height: 300rpx;
+  background-color: #C81623;
+  text-align: center;
+}
+.logo{
+  padding-top:40rpx;
+  color: #ffffff;
+}
+.first{
+  font-size:48rpx;
+  font-weight: bold; 
+}
+.second{
+  font-size: 28rpx;
+}
+.search{
+  height: 60rpx;
+  width: 96%;
+  background-color: #ffffff;
+  margin: 0 auto;
+  margin-top:60rpx;
+  border-radius: 100rpx;
+  line-height: 52rpx;
+}
+.search view{
+  text-align: center;
+  width: 100%;
+  font-size: 30rpx;
+  color: #6d3e3e;
+
+}
+.nav{
+  text-align: center;
+}
+.item{
+   margin-top:30rpx; 
+   text-align: center;
+   font-family: "Microsoft YaHei";
+   font-size: 26rpx;
+   width: 120rpx;
+   display: inline-block;
+   margin-right:20rpx; 
+}
+.hr{
+  background: #E8E8ED;
+  height: 20rpx;
+  /* margin-top: 10px; */
+}
+
+.image_i{
+  height: 500rpx;
+  width: 100%;
+
+}
+
+.menu{
+  text-align: center;
+  margin-top:20rpx;
+  margin-bottom: 20rpx;
+}
+.seckill{
+  display: flex;
+  flex-direction: row;
+}
+.stage{
+  width: 25%;
+  text-align: center;
+  font-size: 24rpx;
+}
+.active {                       
+  transform: scale(1.05);
+  transform: all 2s;
+  font-weight: bold;
+}
+
+.time{
+  background-color: #C81623;
+  width: 90%;
+  color: #ffffff;
+  height: 60rpx;
+  line-height: 60rpx;
+  border-radius: 40rpx;
+  margin-left: 10rpx;
+}
+.timeDefult{
+  background-color: #f2f2f2;
+  width: 90%;
+  height: 60rpx;
+  line-height: 60rpx;
+  border-radius: 40rpx;
+  margin-left: 10rpx;
+}
+.text{
+  font-weight: bold;
+  font-size: 20rpx;
+  text-align: center;
+}
+.style{
+  border: 2rpx solid black;
+}
